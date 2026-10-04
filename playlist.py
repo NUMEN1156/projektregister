@@ -25,9 +25,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 AUDIO_DIR = ROOT / "assets" / "audio"
+COVER_DIR = ROOT / "assets" / "cover"
 OUT = ROOT / "data" / "playlist.json"
 PRIVATE = ROOT / "playlist-namen-privat.json"
 SUFFIXES = {".mp3", ".m4a", ".aac", ".ogg", ".oga", ".opus", ".wav", ".flac", ".webm"}
+COVER_SUFFIXES = {".webp", ".jpg", ".jpeg", ".png"}
 
 ANONYMOUS = "--mit-namen" not in sys.argv
 
@@ -69,6 +71,9 @@ def tidy(title: str) -> str:
 def main() -> int:
     AUDIO_DIR.mkdir(parents=True, exist_ok=True)
     files = sorted(p for p in AUDIO_DIR.rglob("*") if p.is_file() and p.suffix.lower() in SUFFIXES)
+    covers = sorted(
+        p for p in COVER_DIR.rglob("*") if p.is_file() and p.suffix.lower() in COVER_SUFFIXES
+    )
 
     tracks = []
     private = []
@@ -92,6 +97,10 @@ def main() -> int:
             "duration": seconds,
             "bytes": path.stat().st_size,
         }
+        if covers:
+            cover = covers[(position - 1) % len(covers)]
+            entry["cover"] = cover.relative_to(ROOT).as_posix()
+            private[-1]["cover"] = cover.relative_to(ROOT).as_posix()
         if not ANONYMOUS:
             entry["title"] = private[-1]["title"]
             entry["artist"] = private[-1]["artist"]

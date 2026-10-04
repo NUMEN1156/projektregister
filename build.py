@@ -73,6 +73,7 @@ track_state = "ready" if TRACKS else "empty"
 track_initial_title = (
     TRACKS[0].get("title") or TRACKS[0].get("label") or "Titel 01"
 ) if TRACKS else "Noch keine Titel hinterlegt"
+track_initial_cover = (TRACKS[0].get("cover") or "") if TRACKS else ""
 track_initial_artist = (
     f"{len(TRACKS)} Titel · {PLAYLIST.get('total_seconds', 0) / 60:.0f} Minuten"
     if TRACKS
@@ -158,6 +159,9 @@ page = f"""<!doctype html>
       <audio id="audio" preload="metadata"></audio>
       <div class="wrap player__inner">
         <div class="player__now">
+          <span class="player__cover" id="track-cover-frame" data-state="{('ready' if track_initial_cover else 'none')}">
+            <img id="track-cover" alt="" loading="lazy"{(' src="' + esc(track_initial_cover) + '"') if track_initial_cover else ''}>
+          </span>
           <span class="player__eyebrow">Klangbett</span>
           <span class="player__title" id="track-title">{esc(track_initial_title)}</span>
           <span class="player__artist" id="track-artist">{esc(track_initial_artist)}</span>
