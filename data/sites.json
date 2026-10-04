@@ -1,6 +1,12 @@
 {
   "generated_from": "live metadata harvest",
+  "generated_at": "2026-10-04T07:24:09Z",
   "count": 14,
+  "summary": {
+    "live": 14,
+    "guarded": 0,
+    "unreachable": 0
+  },
   "sites": [
     {
       "id": 1,
@@ -11,7 +17,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 3.3,
+      "seconds": 3.07,
       "image": null,
       "monogram": "AB"
     },
@@ -24,7 +30,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 3.68,
+      "seconds": 3.3,
       "image": null,
       "monogram": "N1"
     },
@@ -37,7 +43,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 4.74,
+      "seconds": 5.7,
       "image": "assets/img/03.webp",
       "monogram": "AS"
     },
@@ -50,7 +56,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 4.15,
+      "seconds": 5.22,
       "image": "assets/img/04.webp",
       "monogram": "NR"
     },
@@ -63,20 +69,20 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 4.73,
+      "seconds": 5.85,
       "image": "assets/img/05.webp",
       "monogram": "AN"
     },
     {
       "id": 6,
       "name": "ARCHÉ Sovereign AI — Vorschau",
-      "tagline": "Zugangsschutz aktiv: antwortet mit HTTP 401, ohne Anmeldung ist keine Vorschau möglich.",
+      "tagline": "Vorschau der ARCHÉ-Sovereign-AI-Instanz auf Lovable; je nach Sitzung liegt die Seite hinter einer Anmeldung (vorherige Erhebung: HTTP 401).",
       "url": "https://preview--arche-sovereign-ai.lovable.app/",
       "host": "preview--arche-sovereign-ai.lovable.app",
       "origin": "Lovable",
       "accent": "#a678f0",
-      "status": 401,
-      "seconds": 2.27,
+      "status": 200,
+      "seconds": 4.41,
       "image": null,
       "monogram": "AS"
     },
@@ -89,7 +95,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 4.09,
+      "seconds": 6.82,
       "image": "assets/img/07.webp",
       "monogram": "KG"
     },
@@ -102,7 +108,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 3.85,
+      "seconds": 5.68,
       "image": "assets/img/08.webp",
       "monogram": "ΩO"
     },
@@ -115,7 +121,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 4.45,
+      "seconds": 6.13,
       "image": "assets/img/09.webp",
       "monogram": "LP"
     },
@@ -128,7 +134,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 5.03,
+      "seconds": 6.11,
       "image": "assets/img/10.webp",
       "monogram": "PS"
     },
@@ -141,7 +147,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 4.17,
+      "seconds": 5.67,
       "image": "assets/img/11.webp",
       "monogram": "HP"
     },
@@ -154,7 +160,7 @@
       "origin": "Lovable",
       "accent": "#a678f0",
       "status": 200,
-      "seconds": 3.32,
+      "seconds": 2.32,
       "image": "assets/img/12.webp",
       "monogram": "Ω–"
     },
@@ -167,7 +173,7 @@
       "origin": "Lovable",
       "accent": "#a678f0",
       "status": 200,
-      "seconds": 4.06,
+      "seconds": 2.27,
       "image": "assets/img/13.webp",
       "monogram": "CQ"
     },
@@ -180,7 +186,7 @@
       "origin": "AgentUI",
       "accent": "#4fd1b0",
       "status": 200,
-      "seconds": 2.24,
+      "seconds": 3.09,
       "image": "assets/img/14.webp",
       "monogram": "AG"
     }

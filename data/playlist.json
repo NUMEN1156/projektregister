@@ -1,0 +1,121 @@
+{
+  "generated_at": "2026-10-04T07:26:19Z",
+  "count": 14,
+  "total_seconds": 2728.7,
+  "anonymous": true,
+  "note": "Musik des Projektregisters. Dateien liegen in assets/audio/; dieses Register wird mit 'python3 playlist.py' neu erzeugt und von build.py in die Seite eingebettet. Die Anzeige erfolgt ohne Werknamen.",
+  "tracks": [
+    {
+      "index": 1,
+      "label": "Titel 01",
+      "src": "assets/audio/titel-01.mp3",
+      "duration": 186.6,
+      "bytes": 4539660,
+      "cover": "assets/cover/cover-01.webp"
+    },
+    {
+      "index": 2,
+      "label": "Titel 02",
+      "src": "assets/audio/titel-02.mp3",
+      "duration": 237.8,
+      "bytes": 5510986,
+      "cover": "assets/cover/cover-02.webp"
+    },
+    {
+      "index": 3,
+      "label": "Titel 03",
+      "src": "assets/audio/titel-03.mp3",
+      "duration": 166.4,
+      "bytes": 3956276,
+      "cover": "assets/cover/cover-03.webp"
+    },
+    {
+      "index": 4,
+      "label": "Titel 04",
+      "src": "assets/audio/titel-04.mp3",
+      "duration": 192.3,
+      "bytes": 4723821,
+      "cover": "assets/cover/cover-04.webp"
+    },
+    {
+      "index": 5,
+      "label": "Titel 05",
+      "src": "assets/audio/titel-05.mp3",
+      "duration": 192.1,
+      "bytes": 4438723,
+      "cover": "assets/cover/cover-05.webp"
+    },
+    {
+      "index": 6,
+      "label": "Titel 06",
+      "src": "assets/audio/titel-06.mp3",
+      "duration": 30.0,
+      "bytes": 480723,
+      "cover": "assets/cover/cover-06.webp"
+    },
+    {
+      "index": 7,
+      "label": "Titel 07",
+      "src": "assets/audio/titel-07.mp3",
+      "duration": 232.4,
+      "bytes": 5297029,
+      "cover": "assets/cover/cover-07.webp"
+    },
+    {
+      "index": 8,
+      "label": "Titel 08",
+      "src": "assets/audio/titel-08.mp3",
+      "duration": 211.6,
+      "bytes": 4865674,
+      "cover": "assets/cover/cover-08.webp"
+    },
+    {
+      "index": 9,
+      "label": "Titel 09",
+      "src": "assets/audio/titel-09.mp3",
+      "duration": 181.2,
+      "bytes": 4403323,
+      "cover": "assets/cover/cover-09.webp"
+    },
+    {
+      "index": 10,
+      "label": "Titel 10",
+      "src": "assets/audio/titel-10.mp3",
+      "duration": 214.1,
+      "bytes": 5177205,
+      "cover": "assets/cover/cover-10.webp"
+    },
+    {
+      "index": 11,
+      "label": "Titel 11",
+      "src": "assets/audio/titel-11.mp3",
+      "duration": 238.6,
+      "bytes": 5589623,
+      "cover": "assets/cover/cover-01.webp"
+    },
+    {
+      "index": 12,
+      "label": "Titel 12",
+      "src": "assets/audio/titel-12.mp3",
+      "duration": 235.3,
+      "bytes": 5448933,
+      "cover": "assets/cover/cover-02.webp"
+    },
+    {
+      "index": 13,
+      "label": "Titel 13",
+      "src": "assets/audio/titel-13.mp3",
+      "duration": 246.0,
+      "bytes": 5704081,
+      "cover": "assets/cover/cover-03.webp"
+    },
+    {
+      "index": 14,
+      "label": "Titel 14",
+      "src": "assets/audio/titel-14.mp3",
+      "duration": 164.3,
+      "bytes": 4147328,
+      "cover": "assets/cover/cover-04.webp"
+    }
+  ]
+}
