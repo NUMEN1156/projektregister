@@ -1,0 +1,131 @@
+{
+  "note": "Gepflegte Ziele: Name, Kurztext, Herkunft und Farbe sind redaktionell; Status, Antwortzeit und Vorschaubild werden bei jeder Erhebung frisch ermittelt.",
+  "targets": [
+    {
+      "id": 1,
+      "url": "https://abstractbg-qehn8ouj.manus.space",
+      "name": "Abstract Background — AI-Superposition-Middleware",
+      "tagline": "Enterprise-Middleware für AI-Superposition: mehrere Modelle parallel befragen, gewichten und über einen visuellen Kollaps zu einem Ergebnis führen.",
+      "origin": "Manus",
+      "accent": "#d8b35a",
+      "monogram": "AB"
+    },
+    {
+      "id": 2,
+      "url": "https://nexus11-9buqg3df.manus.space/login",
+      "name": "Nexus 11 — Anmeldung",
+      "tagline": "Eigenständige Instanz mit eigenem Anmeldebereich; die öffentliche Startseite führt zur Anmeldung.",
+      "origin": "Manus",
+      "accent": "#d8b35a",
+      "monogram": "N1"
+    },
+    {
+      "id": 3,
+      "url": "https://archegcmdc-o-nqrcosxj.manus.space",
+      "name": "ARCHÉGOLD Sovereign Command Center",
+      "tagline": "ARCHÉGOLD Sovereign Command Center — phasenverriegelte KI-Infrastruktur-Telemetrie.",
+      "origin": "Manus",
+      "accent": "#d8b35a",
+      "monogram": "AS"
+    },
+    {
+      "id": 4,
+      "url": "https://numenrmx-fvbx3gfa.manus.space",
+      "name": "NUMEN/RMX // Artifact Console",
+      "tagline": "NUMEN/RMX Artifact Console — ein fiktionales Designsystem aus Gold, Graphit, Neon und kontrollierter Überlastung.",
+      "origin": "Manus",
+      "accent": "#d8b35a",
+      "monogram": "NR"
+    },
+    {
+      "id": 5,
+      "url": "https://kiworkdash-mmeulqdy.manus.space",
+      "name": "ARCHÉGOLD NEXUS NUMEN ORIGIN 0.1",
+      "tagline": "Dashboard-Instanz; auf der Seite ist keine Beschreibung hinterlegt.",
+      "origin": "Manus",
+      "accent": "#d8b35a",
+      "monogram": "AN"
+    },
+    {
+      "id": 6,
+      "url": "https://preview--arche-sovereign-ai.lovable.app/",
+      "name": "ARCHÉ Sovereign AI — Vorschau",
+      "tagline": "Vorschau der ARCHÉ-Sovereign-AI-Instanz auf Lovable; je nach Sitzung liegt die Seite hinter einer Anmeldung (vorherige Erhebung: HTTP 401).",
+      "origin": "Lovable",
+      "accent": "#a678f0",
+      "monogram": "AS"
+    },
+    {
+      "id": 7,
+      "url": "https://unialgorithm-krs7hp9u.manus.space/",
+      "name": "Kritische Gerade — Forschungsatlas",
+      "tagline": "Kritische Gerade: Eine kommentierte Landkarte der Millennium-Probleme zwischen Mathematik, Topologie und spekulativer Synthese.",
+      "origin": "Manus",
+      "accent": "#d8b35a",
+      "monogram": "KG"
+    },
+    {
+      "id": 8,
+      "url": "https://omenexus-2zsiirgp.manus.space",
+      "name": "Ω-NEXUS // Operator Terminal",
+      "tagline": "Tablet-native Operator Terminal für Enclave-Status, Relayer-Health und Governance-Telemetrie.",
+      "origin": "Manus",
+      "accent": "#d8b35a",
+      "monogram": "ΩO"
+    },
+    {
+      "id": 9,
+      "url": "https://labelpitch-6tb8ruwk.manus.space",
+      "name": "Label Pitch Intelligence",
+      "tagline": "Werkzeug; auf der Seite ist keine Beschreibung hinterlegt.",
+      "origin": "Manus",
+      "accent": "#d8b35a",
+      "monogram": "LP"
+    },
+    {
+      "id": 10,
+      "url": "https://zeroplaygrou-jfpkbw2a.manus.space",
+      "name": "Project Sandbox / Zero-Cost Playground",
+      "tagline": "Project Sandbox – ein lokaler, interaktiver Zero-Cost Playground im Terminal-Stil.",
+      "origin": "Manus",
+      "accent": "#d8b35a",
+      "monogram": "PS"
+    },
+    {
+      "id": 11,
+      "url": "https://hardproblems-2428acwk.manus.space/",
+      "name": "Hard Problems — Romseminar 2022",
+      "tagline": "Hard Problems – ein interdisziplinäres Archiv des Romseminars 2022 über die Fragen, die uns weiterbringen.",
+      "origin": "Manus",
+      "accent": "#d8b35a",
+      "monogram": "HP"
+    },
+    {
+      "id": 12,
+      "url": "https://sovereign-code-gate.lovable.app",
+      "name": "Ω-NEXUS – Sovereign AI: Determinismus statt Blackbox",
+      "tagline": "Identitätssteuerung, mathematische Reproduzierbarkeit und Zero-Trust auf Hardware-Ebene – die Architektur des Vertrauens.",
+      "origin": "Lovable",
+      "accent": "#a678f0",
+      "monogram": "Ω–"
+    },
+    {
+      "id": 13,
+      "url": "https://gold-qontrol-aura.lovable.app/",
+      "name": "Contro — Quantum Control Interface",
+      "tagline": "117 Hz Resonanz · QEC Telemetrie · Puls-Steuerung",
+      "origin": "Lovable",
+      "accent": "#a678f0",
+      "monogram": "CQ"
+    },
+    {
+      "id": 14,
+      "url": "https://sharp-cool-lake.agentui.app",
+      "name": "ARCHE GOLD Protokoll",
+      "tagline": "Protokoll-Oberfläche (AgentUI-Anwendung).",
+      "origin": "AgentUI",
+      "accent": "#4fd1b0",
+      "monogram": "AG"
+    }
+  ]
+}

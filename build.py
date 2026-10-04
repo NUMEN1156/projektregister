@@ -15,6 +15,12 @@ ROOT = Path(__file__).parent
 DATA = json.loads((ROOT / "data/sites.json").read_text(encoding="utf-8"))
 SITES = DATA["sites"]
 
+PLAYLIST_PATH = ROOT / "data" / "playlist.json"
+PLAYLIST = json.loads(PLAYLIST_PATH.read_text(encoding="utf-8")) if PLAYLIST_PATH.exists() else {"tracks": []}
+TRACKS = PLAYLIST.get("tracks", [])
+# Als JSON in die Seite eingebettet; "<" wird maskiert, damit das Skript-Tag sicher bleibt.
+PLAYLIST_JSON = json.dumps({"tracks": TRACKS}, ensure_ascii=False).replace("<", "\\u003c")
+
 ORIGINS = [("alle", "Alle"), ("manus.space", "Manus"), ("lovable.app", "Lovable"),
            ("agentui.app", "AgentUI"), ("live", "Erreichbar"), ("geschaetzt", "Geschützt")]
 
@@ -63,6 +69,15 @@ def card(site: dict, index: int) -> str:
 live = sum(1 for s in SITES if s.get("status") == 200)
 guarded = sum(1 for s in SITES if s.get("status") in (401, 403))
 stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+track_state = "ready" if TRACKS else "empty"
+track_initial_title = (
+    TRACKS[0].get("title") or TRACKS[0].get("label") or "Titel 01"
+) if TRACKS else "Noch keine Titel hinterlegt"
+track_initial_artist = (
+    f"{len(TRACKS)} Titel · {PLAYLIST.get('total_seconds', 0) / 60:.0f} Minuten"
+    if TRACKS
+    else "Dateien nach assets/audio/ legen, dann python3 playlist.py"
+)
 chips = "\n".join(
     f'          <button class="chip" type="button" data-filter="{key}" aria-pressed="{"true" if key == "alle" else "false"}">{label}</button>'
     for key, label in ORIGINS
@@ -129,6 +144,8 @@ page = f"""<!doctype html>
            <code>tagline</code>, <code>url</code>, <code>host</code>, <code>origin</code>,
            <code>status</code>, <code>seconds</code>, <code>image</code>, <code>monogram</code>.</p>
         <p>Neu erzeugen: <code>python3 build.py</code> (liest <code>data/sites.json</code>).</p>
+        <p><code>data/playlist.json</code> — Titel des Musikplayers: <code>title</code>, <code>artist</code>,
+           <code>src</code>, <code>duration</code>, <code>bytes</code>. Neu erzeugen: <code>python3 playlist.py</code>.</p>
       </section>
 
       <footer class="foot">
@@ -137,7 +154,38 @@ page = f"""<!doctype html>
       </footer>
     </main>
 
+    <section class="player" id="player" data-state="{track_state}" aria-label="Musikplayer">
+      <audio id="audio" preload="metadata"></audio>
+      <div class="wrap player__inner">
+        <div class="player__now">
+          <span class="player__eyebrow">Klangbett</span>
+          <span class="player__title" id="track-title">{esc(track_initial_title)}</span>
+          <span class="player__artist" id="track-artist">{esc(track_initial_artist)}</span>
+        </div>
+        <div class="player__transport">
+          <button type="button" class="pbtn" data-action="prev" aria-label="Vorheriger Titel">◀◀</button>
+          <button type="button" class="pbtn pbtn--main" data-action="toggle" aria-label="Wiedergabe starten">▶</button>
+          <button type="button" class="pbtn" data-action="next" aria-label="Nächster Titel">▶▶</button>
+        </div>
+        <div class="player__timeline">
+          <span class="player__time" id="time-current">0:00</span>
+          <input class="player__seek" type="range" id="seek" min="0" max="1000" value="0" step="1"
+                 aria-label="Position im Titel">
+          <span class="player__time" id="time-total">0:00</span>
+        </div>
+        <div class="player__volume">
+          <input class="player__vol" type="range" id="volume" min="0" max="100" value="70" step="1"
+                 aria-label="Lautstärke">
+          <button type="button" class="pbtn pbtn--list" data-action="list" aria-expanded="false"
+                  aria-controls="playlist">Titel <b id="track-count">{len(TRACKS)}</b></button>
+        </div>
+      </div>
+      <ol class="playlist" id="playlist" hidden></ol>
+    </section>
+    <script type="application/json" id="playlist-data">{PLAYLIST_JSON}</script>
+
     <script src="assets/app.js" defer></script>
+    <script src="assets/player.js" defer></script>
   </body>
 </html>
 """
