@@ -379,3 +379,204 @@ body::before {
   .grid { grid-template-columns: 1fr; gap: 18px; }
   .masthead__meta { display: none; }
 }
+/* ------------------------------------------------------------ Musikplayer -- */
+
+.player {
+  position: sticky;
+  bottom: 0;
+  z-index: 20;
+  border-top: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(8, 9, 12, 0.82), rgba(8, 9, 12, 0.97));
+  backdrop-filter: blur(12px);
+}
+
+.player__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) auto minmax(0, 1.7fr) auto;
+  gap: 18px;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+.player__now { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+
+.player__eyebrow {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.player__title {
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.player__artist {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.player[data-state="empty"] .player__title { font-weight: 400; color: var(--muted); }
+.player[data-state="playing"] .player__eyebrow::after { content: " · läuft"; }
+
+.player__transport { display: flex; gap: 6px; }
+
+.pbtn {
+  appearance: none;
+  border: 1px solid var(--line-soft);
+  background: transparent;
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  padding: 7px 11px;
+  cursor: pointer;
+  transition: border-color 160ms ease, color 160ms ease, background 160ms ease;
+}
+
+.pbtn:hover:not(:disabled) { border-color: var(--gold); color: var(--gold); }
+.pbtn:disabled { opacity: 0.4; cursor: not-allowed; }
+.pbtn:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+.pbtn--main { min-width: 48px; border-color: var(--gold); color: var(--gold); }
+.player[data-state="playing"] .pbtn--main { background: var(--gold); color: var(--ink); }
+
+.player__timeline { display: flex; align-items: center; gap: 10px; }
+
+.player__time {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+  min-width: 38px;
+  text-align: center;
+}
+
+.player__seek,
+.player__vol {
+  appearance: none;
+  height: 3px;
+  background: var(--line-soft);
+  cursor: pointer;
+}
+
+.player__seek { flex: 1 1 auto; }
+.player__vol { width: 96px; }
+
+.player__seek::-webkit-slider-thumb,
+.player__vol::-webkit-slider-thumb {
+  appearance: none;
+  width: 11px;
+  height: 11px;
+  border: none;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.player__seek::-moz-range-thumb,
+.player__vol::-moz-range-thumb {
+  width: 11px;
+  height: 11px;
+  border: none;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.player__volume { display: flex; align-items: center; gap: 10px; }
+.pbtn--list b { color: var(--gold); }
+
+.playlist {
+  list-style: none;
+  margin: 0;
+  padding: 8px 24px 16px;
+  border-top: 1px solid var(--line-soft);
+  max-height: 40vh;
+  overflow-y: auto;
+}
+
+.playlist li + li { border-top: 1px solid var(--line-soft); }
+
+.playlist button {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr) auto;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+  padding: 9px 0;
+  background: none;
+  border: 0;
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.playlist button:hover .playlist__title,
+.playlist li.is-active .playlist__title { color: var(--gold); }
+
+.playlist__pos,
+.playlist__time { font-family: var(--mono); font-size: 11px; color: var(--muted); }
+.playlist__title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+@media (max-width: 860px) {
+  .player__inner {
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "now volume" "transport timeline";
+    gap: 10px 14px;
+  }
+  .player__now { grid-area: now; }
+  .player__transport { grid-area: transport; }
+  .player__timeline { grid-area: timeline; }
+  .player__volume { grid-area: volume; justify-content: flex-end; }
+  .player__vol { width: 64px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pbtn { transition: none; }
+}
+/* --------------------------------------------------------------- Cover -- */
+/* Das Cover sitzt links neben der Beschriftung. Fehlt es, fällt die Spalte
+   ersatzlos weg — die Leiste bleibt in beiden Fällen gleich hoch. */
+.player__now {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-areas: "cover eyebrow" "cover title" "cover artist";
+  column-gap: 12px;
+  row-gap: 1px;
+  align-items: center;
+}
+.player__cover {
+  grid-area: cover;
+  width: 52px;
+  height: 52px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.03);
+}
+.player__cover[data-state="none"] { display: none; }
+.player__cover img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.player__eyebrow { grid-area: eyebrow; }
+.player__title { grid-area: title; }
+.player__artist { grid-area: artist; }
+
+.playlist__cover {
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+  object-fit: cover;
+  flex: 0 0 auto;
+}
+.playlist li.is-active .playlist__cover { outline: 1px solid var(--gold); outline-offset: 1px; }
+
+@media (max-width: 640px) {
+  .player__cover { width: 42px; height: 42px; }
+}
