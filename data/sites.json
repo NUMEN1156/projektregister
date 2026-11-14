@@ -1,6 +1,6 @@
 {
   "generated_from": "live metadata harvest",
-  "generated_at": "2026-11-13T05:19:58Z",
+  "generated_at": "2026-11-14T05:20:00Z",
   "count": 14,
   "summary": {
     "live": 14,
@@ -17,7 +17,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 0.83,
+      "seconds": 0.42,
       "image": null,
       "monogram": "AB"
     },
@@ -30,7 +30,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 11.18,
+      "seconds": 0.37,
       "image": null,
       "monogram": "N1"
     },
@@ -43,7 +43,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 1.27,
+      "seconds": 1.02,
       "image": "assets/img/03.webp",
       "monogram": "AS"
     },
@@ -56,7 +56,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 1.64,
+      "seconds": 1.25,
       "image": "assets/img/04.webp",
       "monogram": "NR"
     },
@@ -69,7 +69,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 6.01,
+      "seconds": 0.56,
       "image": "assets/img/05.webp",
       "monogram": "AN"
     },
@@ -82,7 +82,7 @@
       "origin": "Lovable",
       "accent": "#a678f0",
       "status": 200,
-      "seconds": 0.59,
+      "seconds": 0.3,
       "image": null,
       "monogram": "AS"
     },
@@ -95,7 +95,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 0.88,
+      "seconds": 0.74,
       "image": "assets/img/07.webp",
       "monogram": "KG"
     },
@@ -108,7 +108,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 0.83,
+      "seconds": 1.5,
       "image": "assets/img/08.webp",
       "monogram": "ΩO"
     },
@@ -121,7 +121,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 4.83,
+      "seconds": 3.99,
       "image": "assets/img/09.webp",
       "monogram": "LP"
     },
@@ -134,7 +134,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 1.33,
+      "seconds": 0.71,
       "image": "assets/img/10.webp",
       "monogram": "PS"
     },
@@ -147,7 +147,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 1.63,
+      "seconds": 0.75,
       "image": "assets/img/11.webp",
       "monogram": "HP"
     },
@@ -160,7 +160,7 @@
       "origin": "Lovable",
       "accent": "#a678f0",
       "status": 200,
-      "seconds": 1.65,
+      "seconds": 1.83,
       "image": "assets/img/12.webp",
       "monogram": "Ω–"
     },
@@ -173,7 +173,7 @@
       "origin": "Lovable",
       "accent": "#a678f0",
       "status": 200,
-      "seconds": 1.03,
+      "seconds": 1.51,
       "image": "assets/img/13.webp",
       "monogram": "CQ"
     },
@@ -186,7 +186,7 @@
       "origin": "AgentUI",
       "accent": "#4fd1b0",
       "status": 200,
-      "seconds": 0.36,
+      "seconds": 0.11,
       "image": "assets/img/14.webp",
       "monogram": "AG"
     }
