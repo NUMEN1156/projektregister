@@ -1,6 +1,6 @@
 {
   "generated_from": "live metadata harvest",
-  "generated_at": "2026-11-17T05:19:57Z",
+  "generated_at": "2026-11-18T05:20:32Z",
   "count": 14,
   "summary": {
     "live": 14,
@@ -17,7 +17,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 0.81,
+      "seconds": 0.98,
       "image": null,
       "monogram": "AB"
     },
@@ -30,7 +30,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 0.81,
+      "seconds": 0.78,
       "image": null,
       "monogram": "N1"
     },
@@ -43,7 +43,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 0.94,
+      "seconds": 0.83,
       "image": "assets/img/03.webp",
       "monogram": "AS"
     },
@@ -56,7 +56,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 1.29,
+      "seconds": 1.17,
       "image": "assets/img/04.webp",
       "monogram": "NR"
     },
@@ -69,7 +69,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 4.62,
+      "seconds": 1.39,
       "image": "assets/img/05.webp",
       "monogram": "AN"
     },
@@ -82,7 +82,7 @@
       "origin": "Lovable",
       "accent": "#a678f0",
       "status": 200,
-      "seconds": 0.56,
+      "seconds": 0.45,
       "image": null,
       "monogram": "AS"
     },
@@ -108,7 +108,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 0.93,
+      "seconds": 0.92,
       "image": "assets/img/08.webp",
       "monogram": "ΩO"
     },
@@ -121,7 +121,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 4.07,
+      "seconds": 4.7,
       "image": "assets/img/09.webp",
       "monogram": "LP"
     },
@@ -134,7 +134,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 1.02,
+      "seconds": 1.08,
       "image": "assets/img/10.webp",
       "monogram": "PS"
     },
@@ -147,7 +147,7 @@
       "origin": "Manus",
       "accent": "#d8b35a",
       "status": 200,
-      "seconds": 1.01,
+      "seconds": 1.05,
       "image": "assets/img/11.webp",
       "monogram": "HP"
     },
@@ -160,7 +160,7 @@
       "origin": "Lovable",
       "accent": "#a678f0",
       "status": 200,
-      "seconds": 1.38,
+      "seconds": 2.21,
       "image": "assets/img/12.webp",
       "monogram": "Ω–"
     },
@@ -173,7 +173,7 @@
       "origin": "Lovable",
       "accent": "#a678f0",
       "status": 200,
-      "seconds": 1.36,
+      "seconds": 1.52,
       "image": "assets/img/13.webp",
       "monogram": "CQ"
     },
@@ -186,7 +186,7 @@
       "origin": "AgentUI",
       "accent": "#4fd1b0",
       "status": 200,
-      "seconds": 0.4,
+      "seconds": 0.31,
       "image": "assets/img/14.webp",
       "monogram": "AG"
     }
